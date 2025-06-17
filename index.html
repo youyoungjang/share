@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소개</title>
+    <!-- Tailwind CSS CDN을 사용하여 빠르고 반응형 스타일링 적용 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 사용자 정의 폰트 설정 (Inter 폰트 사용) */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* 기본 색상 및 여백 설정 */
+        .project-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+        }
+        /* 프로젝트 섹션별 스타일 */
+        .project-section {
+            background-color: #ffffff; /* 흰색 배경 */
+            border: 1px solid #e2e8f0; /* 연한 회색 테두리 */
+            border-radius: 0.5rem; /* 둥근 모서리 */
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+        }
+        /* 리스트 스타일 - Tailwind의 list-disc 클래스를 사용하므로 CSS에서는 기본 들여쓰기만 지정 */
+        ul {
+            margin-bottom: 1.25rem;
+            /* Tailwind의 list-disc와 pl-6 클래스가 불릿과 들여쓰기를 담당합니다. */
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        /* 이미지 컨테이너 스타일 */
+        .image-container {
+            text-align: center;
+            margin: 1.5rem 0;
+            background-color: #f7fafc; /* 이미지 배경색 */
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px dashed #cbd5e0; /* 점선 테두리 */
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.25rem;
+        }
+        .image-container p {
+            margin-top: 0.75rem;
+            font-size: 0.875rem; /* 작은 글씨 */
+            color: #718096; /* 회색 텍스트 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 antialiased">
+    <!-- 메인 컨테이너 시작 -->
+    <div class="project-container">
+        <!-- 메인 제목 스타일 강조 (초록 계열 그라데이션) -->
+        <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-10 text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600 tracking-tight">
+            Contents Sharing
+        </h1>
+
+        <!-- 전체 배경 설명 섹션 시작 -->
+        <div class="project-section">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 border-b-2 border-emerald-400 pb-3 mb-6">Overall Background</h2>
+            <ul class="list-disc pl-6 text-lg leading-relaxed text-gray-700">
+                <li>다른 프로젝트들도 있었지만, 네이버쇼핑이라는 맥락에 맞춰 토스쇼핑 관련 프로젝트만 포함하였습니다.</li>
+                <li>각 프로젝트의 사업 단계나 당시 작업 조건을 고려하여 봐주시면 좋을 것 같습니다.</li>
+                <li>실질적인 임팩트를 창출하는 것과 효율적으로 자산 가치를 높이는 것을 중요하게 생각했습니다.</li>
+            </ul>
+        </div>
+        <!-- 전체 배경 설명 섹션 끝 -->
+
+        <!-- 프로젝트 1 섹션 시작 -->
+        <div class="project-section">
+            <!-- 프로젝트 제목 스타일 강조 (초록 계열 밑줄) -->
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 border-b-2 border-emerald-400 pb-3 mb-6">MAB</h2>
+
+            <!-- 이모지 및 bold 처리된 섹션 제목 (초록 계열 텍스트) -->
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">📌 Background</h3>
+            <ul class="list-disc pl-6">
+                <li>크게 보면 총 3단계의 발전 과정을 거쳤습니다.</li>
+                <li>고객 피드백 데이터, 상품 메타데이터가 거의 없는 상황에서 상품 추천 모델링을 해야했습니다.</li>
+                <li>로그 마트도, 카테고리 체계도 없었기에 모두 처음부터 만들면서 작업했습니다.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">🎯 Objective of the Task</h3>
+            <ul class="list-disc pl-6">
+                <li>처음에는 지면 구성이 거의 잡히지 않은 상황에서 무한 스크롤 스타일의 상품 추천을 해야 했습니다.</li>
+                <li>이후에는 서비스 구조가 점차 잡히면서 추천 로직의 효율성과 성능을 올리는 데 집중했습니다.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">⚙️ Developed System Architecture</h3>
+            <div class="image-container">
+                <!-- 예시 이미지 (초록 계열 색상으로 변경) -->
+                <img src="https://placehold.co/600x300/e0f7e0/2e8b57?text=System+Architecture+Diagram" alt="시스템 아키텍처">
+                <p><em>그림</em></p>
+            </div>
+            <ul class="list-disc pl-6">
+                <li>demo cohort, batch serving, pessimistic thompson sampling</li>
+                <li>user-emb-based cohort, hierarchical cohort structure</li>
+                <li>lcb filtering layer</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">📈 Results & Impact</h3>
+            <ul class="list-disc pl-6">
+                <li>CTR, CVR, GMV를 상승시켰습니다.</li>
+                <li>고객 피드백 데이터를 확보하는데 크게 기여하였고, 효율적으로 새롭고 다양한 상품을 노출하는데에 기여하였습니다.</li>
+                <li>다소 협력적이지 않은 업무 분위기 속에서 활로를 뚫은 중요한 이벤트로 기억하고 있습니다.</li>
+                <li>Contextual Bandit도 설계한 적이 있습니다만 개발하지 못하고 팀을 나왔습니다. ㅎㅎ</li>
+            </ul>
+        </div>
+        <!-- 프로젝트 1 섹션 끝 -->
+
+        <!-- 프로젝트 2 섹션 시작 -->
+        <div class="project-section">
+            <!-- 프로젝트 제목 스타일 강조 (초록 계열 밑줄) -->
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 border-b-2 border-emerald-400 pb-3 mb-6">상품 상세 화면(PDP) 유사/연관상품 추천</h2>
+
+            <!-- 이모지 및 bold 처리된 섹션 제목 (초록 계열 텍스트) -->
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">🎯 Objective of the Task</h3>
+            <ul class="list-disc pl-6">
+                <li>고객의 탐색을 보조하고 구매 의사 결정 과정에 긍정적으로 기여하고자 했습니다.</li>
+                <li>추천 모델이 없으면 해당 지면의 품질이 낮을 것으로 예상하여 추천 모델을 바로 붙여서 실험에 돌입했습니다.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">⚙️ Developed System Architecture</h3>
+            <ul class="list-disc pl-6">
+                <li>유사상품 추천의 경우, 상품 텍스트 데이터를 활용하여 KoRoBerta 모델을 학습(이 모델 자체는 제가 하지 않음)시켜 이에 기반한 텍스트 임베딩으로 유사도를 측정하였습니다.</li>
+                <li>EfficientNet, ViT 등을 활용하여 이미지 모델 또한 학습시켜서 한 때 둘 다 사용하기도 하였으나 구조의 복잡도를 낮추기 위해 추후 텍스트 only로 회귀하였습니다.</li>
+                <li>연관상품 추천의 경우, 최근 2~3주 정도의 데이터에 기반하여 세션 내 co-click이 많았던 상품을 추천해주도록 구조를 만들었습니다.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">📈 Results & Impact</h3>
+            <ul class="list-disc pl-6">
+                <li>고객의 탐색을 보조하여 CTR과 클릭량을 늘렸습니다.</li>
+                <li>상품 상세 하단으로의 진입이 저조했던 기간이 길어서 임팩트가 아주 크지는 않았지만, 사용된 모델들은 다른 시스템에서 또 활용되었습니다.</li>
+            </ul>
+        </div>
+        <!-- 프로젝트 2 섹션 끝 -->
+
+        <!-- 프로젝트 3 섹션 시작 -->
+        <div class="project-section">
+            <!-- 프로젝트 제목 스타일 강조 (초록 계열 밑줄) -->
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 border-b-2 border-emerald-400 pb-3 mb-6">2-stage Ranking Models</h2>
+
+            <!-- 이모지 및 bold 처리된 섹션 제목 (초록 계열 텍스트) -->
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">📌 Background</h3>
+            <ul class="list-disc pl-6">
+                <li>준개인화 추천 모델, item2item 모델들이 몇 개 만들어진 후에 다음 단계로 개인화 추천 모델을 고려하게 되었습니다.</li>
+                <li>처음에는 배치 추천을 생각하기도 하였지만, 추후 발전 단계를 고려하여 실시간 추론 방식을 적용하게 되었습니다.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">🎯 Objective of the Task</h3>
+            <ul class="list-disc pl-6">
+                <li>개인화 추천 영역을 만들어 CVR을 상승시키는 것이 첫 번째 목표였고</li>
+                <li>나중에 추가적으로 개발할 미래의 component들을 위해 참고할 만한 파이프라인을 만드는 것이 두 번째 목표였습니다. (자산 구축)</li>
+            </ul>
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">⚙️ Developed System Architecture</h3>
+            <div class="image-container">
+                <!-- 예시 이미지 (초록 계열 색상으로 변경) -->
+                <img src="https://placehold.co/600x300/e0f7e0/2e8b57?text=System+Architecture+Diagram" alt="시스템 아키텍처">
+                <p><em>그림</em></p>
+            </div>
+            <ul class="list-disc pl-6">
+                <li>MAB cohort를 만드는 two-tower 모델을 개발하여 추천 후보 상품을 선택했습니다.</li>
+                <li>구매 데이터에 기반하여 학습 데이터셋을 구성했고, Mixed Random Sampling 기법을 적용했습니다.</li>
+                <li>고객 행동 시퀀스, 고객/상품 기본 피쳐, 상품 이미지/텍스트 임베딩 등을 피쳐로 활용했습니다.</li>
+                <li>user-emb, item-emb를 만들고 FAISS를 활용해서 유사도 계산을 한 뒤, 고객 1명 당 300~500개의 상품을 추출하였습니다. 이 추론 작업은 daily로 진행하였습니다.</li>
+                <li>랭킹 모델로는 Masknet을 사용했습니다. 최초에는 CPU로 서빙하다가 작년 가을 즈음 GPU(Triton) 서빙으로 전환하였습니다.</li>
+                <li>Phoenix, Aerospike, Redis 등을 활용하였습니다.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">📈 Results & Impact</h3>
+            <ul class="list-disc pl-6">
+                <li>매 실험 만족스러운 결과를 보인 것은 아니었지만 결과적으로 전체 CVR, GMV 상승에 유의미하게 기여하였습니다.</li>
+                <li>여러 팀의 협조를 얻어 기본적인 파이프라인 구성을 완료했다는 것 자체가 매우 중요했습니다.</li>
+            </ul>
+        </div>
+        <!-- 프로젝트 3 섹션 끝 -->
+
+        <!-- 프로젝트 4 섹션 시작 -->
+        <div class="project-section">
+            <!-- 프로젝트 제목 스타일 강조 (초록 계열 밑줄) -->
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 border-b-2 border-emerald-400 pb-3 mb-6">Graph Models</h2>
+
+            <!-- 이모지 및 bold 처리된 섹션 제목 (초록 계열 텍스트) -->
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">📌 Background</h3>
+            <ul class="list-disc pl-6">
+                <li>이 섹션에서는 Message Passing + Aggregation 구조의 그래프 모델을 설명하는 것이 아닙니다.</li>
+                <li>앞서 설명한 two-tower 모델의 경우 로직이 다소 경직되어 있다는 단점을 갖고 있기에, 고객 행동에 따른 실시간성 반응을 강화하기 위해 본 모델을 개발하게 되었습니다.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">🎯 Objective of the Task</h3>
+            <ul class="list-disc pl-6">
+                <li>고객이 특정 상품을 클릭하고 돌아오면 해당 상품과 연관된 상품을 실시간으로 보여주는 것이 목적이었습니다.</li>
+                <li>2-stage Ranking System에서 Candidate Generator의 역할을 수행하도록 했습니다.</li>
+            </ul>
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">⚙️ Developed System Architecture</h3>
+            <div class="image-container">
+                <!-- 예시 이미지 (초록 계열 색상으로 변경) -->
+                <img src="https://placehold.co/600x300/e0f7e0/2e8b57?text=System+Architecture+Diagram" alt="시스템 아키텍처">
+                <p><em>그림</em></p>
+            </div>
+            <ul class="list-disc pl-6">
+                <li>random walk를 활용해서 고객-상품 사이의 관계를 재정의하고 상품으로만 이루어진 homogenous graph를 구축했습니다.</li>
+                <li>contrastive learning 구조로 학습하였고, 이렇게 학습된 상품 임베딩은 milvus에 적재되어 이후 실시간 유사도 계산에 활용되었습니다.</li>
+                <li>위 그래프 모델 학습 대상이 아니었던 상품의 경우 상품 텍스트 임베딩을 활용하여 보완하였습니다.</li>
+                <li>사실 이전에도 비슷한 PoC를 두 차례 한 적이 있었으나 고객의 쇼핑 패턴이 너무나 극단적이어서 유의미한 결과를 만들지 못했었습니다.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">📈 Results & Impact</h3>
+            <ul class="list-disc pl-6">
+                <li>CVR, GMV는 소폭 상승하였고, 클릭량이 크게 늘어 고객의 행동 패턴을 유의미하게 변화시켰습니다.</li>
+                <li>정말 짧았던 고객 행동의 세션 길이를 아주 조금 늘렸다고 볼 수 있습니다.</li>
+            </ul>
+        </div>
+        <!-- 프로젝트 4 섹션 끝 -->
+
+        <!-- 프로젝트 5 섹션 시작 -->
+        <div class="project-section">
+            <!-- 프로젝트 제목 스타일 강조 (초록 계열 밑줄) -->
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 border-b-2 border-emerald-400 pb-3 mb-6">Item Keyword Extractions</h2>
+
+            <!-- 이모지 및 bold 처리된 섹션 제목 (초록 계열 텍스트) -->
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">📌 Background</h3>
+            <ul class="list-disc pl-6">
+                <li>OpenAI API를 내부망에서 사용할 수 없게 됨으로써 상품 키워드를 추출할 LLM이 필요하게 되었습니다.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">🎯 Objective of the Task</h3>
+            <ul class="list-disc pl-6">
+                <li>적절한 품질의 상품 키워드를 추출하여 키워드 추천에 지속적으로 활용하는 것이 주 목적이었고</li>
+                <li>부가적으로 추출된 키워드를 다른 downtream tasks에 활용하는 것 또한 목표하였습니다.</li>
+            </ul>
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">⚙️ Developed System Architecture</h3>
+            <div class="image-container">
+                <!-- 예시 이미지 (초록 계열 색상으로 변경) -->
+                <img src="https://placehold.co/600x300/e0f7e0/2e8b57?text=System+Architecture+Diagram" alt="시스템 아키텍처">
+                <p><em>그림</em></p>
+            </div>
+            <ul class="list-disc pl-6">
+                <li>GPT-4o에 기반하여 1만 건 이상의 Query-Answer set을 얻었습니다.</li>
+                <li>구축한 학습 데이터셋에 기반하여 Qwen-2-7B를 Instruction Tuning하였습니다.</li>
+                <li>Llama-3.2-3B 또한 학습시켜 비교하였는데, Qwen이 소폭 더 나은 결과를 보여주었기에 Qwen을 백본 모델로 선정하였습니다.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-emerald-700 mb-2">📈 Results & Impact</h3>
+            <ul class="list-disc pl-6">
+                <li>상품 키워드 추출에 활용되었습니다.</li>
+            </ul>
+        </div>
+        <!-- 프로젝트 5 섹션 끝 -->
+
+    </div>
+    <!-- 메인 컨테이너 끝 -->
+</body>
+</html>
